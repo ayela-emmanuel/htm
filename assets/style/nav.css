@@ -1,0 +1,75 @@
+:root{
+    --baseColor : rgb(97, 194, 0);
+    --activeColor : rgb(118, 236, 0);
+}
+
+
+body{
+    margin: 0px;
+}
+
+
+
+#nav-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 1);
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+
+}
+
+.search-bar{
+    padding: 5px;
+    display: flex;
+}
+.search-bar>*{
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    
+}
+.search-bar>input{
+    width: 400px;
+    background-color: rgb(232, 232, 232);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.205);
+}
+.search-bar>button{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    background-color: var(--baseColor);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.nav-buttons{
+    display: flex;
+}
+
+.nav-buttons>button{
+    background-color: var(--baseColor);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin: 5px;
+    display: block;
+    transition: all .5s ;
+}
+
+
+
+button:hover{
+    background-color: rgb(166, 255, 0);
+}

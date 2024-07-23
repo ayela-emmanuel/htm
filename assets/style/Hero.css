@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* *{
+    border: 1px solid black;
+} */
+#Hero-Section{
+    height: 70vh;
+    background-image: url("../images/milad.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Hero-Section-btns{
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    padding: 10px;
+    /* width: 100vw; */
+    height:  inherit;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-shadow:  2px 2px 5px black ;
+    z-index: 2;
+    position: absolute;
+}
+
+.overlay{
+    background-color:  rgba(0, 0, 0, 0.26);
+    height:  inherit;
+    width: 100vw;
+    position: absolute;
+    margin: 0px;
+    z-index: 1;
+    transition: all 1s;
+    backdrop-filter: blur(5px);
+}
+.overlay:hover{
+    backdrop-filter: blur(0px);
+    background-color:  rgba(0, 0, 0, 0.048);
+}
+
+
+#jumiaLayout{
+    background-color: green;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1500px;
+}
+
+#jumiaLayout>*{
+    background-color: yellow;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 5px;
+    width: 20%;
+}
+.center{
+    width: 40% !important;
+}
